@@ -33,6 +33,7 @@ scene.add(ambientLight)
 const renderer = new THREE.WebGLRenderer();
 renderer.setSize(window.innerWidth, window.innerHeight);
 document.body.appendChild(renderer.domElement);
+renderer.shadowMap.enabled = true;
 
 // const concreteMaterial = new CANNON.Material("concrete"); // 混凝土材料，适合做地面
 // const plasticMaterial = new CANNON.Material("plastic"); // 塑料材质
